@@ -1,5 +1,5 @@
-import card from '../Assets/card.png'
-import noice from '../Assets/Background.svg'
+import CardImage from '../Assets/Card.png'
+import Noice from '../Assets/Background.svg'
 
 export const HeroSection = () => {
     return <>
@@ -11,7 +11,7 @@ export const HeroSection = () => {
            </div>
         </div>
             <div className="inset-0 absolute -z-20 "  >
-                <img src={noice.src} className='w-full opacity-10' alt="" />
+                <img src={Noice.src} className='w-full opacity-10' alt="" />
             </div>
         <div className="h-80  w-full absolute top-0  flex items-center justify-center -z-40 overflow-x-clip" >
 
@@ -34,7 +34,7 @@ export const HeroSection = () => {
         <div
         className='inline-flex overflow-clip h-[500px] w-[4000px]  rounded-[40px] drop-shadow-md'
         style={{
-            backgroundImage: `url(${card.src})`,
+            backgroundImage: `url(${CardImage.src})`,
             backgroundSize: "cover", // Ensures the image covers the parent
             backgroundPosition: "bottom", // Centers the image within the parent
             backgroundRepeat: "no-repeat", // Prevents image repetition
