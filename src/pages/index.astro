@@ -2,6 +2,9 @@
 import {HeroSection} from '../section/HeroSection'
 import { Headers } from '../section/Header';
 import Layout from '../layouts/Layout.astro';
+import { Vission } from '../section/Vission';
+import { Collaboration } from '../section/Collaboration'
+import { Feature } from '../section/Feature'
 
 
 // main page to render the component and sections
@@ -10,4 +13,7 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
     <Headers client:load/>
 	<HeroSection />
+    <Vission />
+    <Collaboration />
+    <Feature />
 </Layout>

@@ -29,7 +29,7 @@ export const Headers = () => {
 
   return (
     <header
-      className={`flex w-full justify-between items-center px-8 py-4 fixed transition-all duration-300 ${
+      className={`flex w-full justify-between items-center px-8 py-4 fixed transition-all duration-300 z-40 ${
         isScrolled
           ? 'backdrop-blur-sm bg-emerald-950/5 shadow-md shadow-black/5'
           : 'bg-transparent'
@@ -39,7 +39,7 @@ export const Headers = () => {
         <img src={Logo.src} alt="Logo" />
       </div>
       <div
-        className="flex w-1/2 flex-row justify-between items-center rounded-[16px] px-4 py-3"
+        className="flex w-1/2 flex-row justify-between items-center rounded-[16px] px-4 py-3 outline outline-1 outline-[#07B782]"
         style={{
           background: 'linear-gradient(180deg, rgba(0, 203, 169, 0.12) 0%, rgba(0, 203, 169, 0.01) 210.19%)',
           boxShadow:
@@ -61,7 +61,7 @@ export const Headers = () => {
       </div>
       <div className="flex">
         <div className="inline-flex">
-          <Button label="Join WaitList" />
+          <Button label="Connet Wallet" />
         </div>
       </div>
     </header>
