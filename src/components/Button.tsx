@@ -5,5 +5,5 @@ type ButtonProps = {
 };
 
 export const Button: React.FC<ButtonProps> = ({ label }) => {
-    return <button className={`bg-[#00CBA9] py-[10px] px-5 rounded-lg  font-semibold uppercase text-[12px]  text-white/90 drop-shadow-md`}>{label}</button>; // Use a lowercase 'button' tag instead of a self-referencing 'Button'
+    return <button className={`bg-teal-600 py-[10px] px-5 rounded-lg  font-semibold uppercase text-[12px]  text-white/90 drop-shadow-md`}>{label}</button>; // Use a lowercase 'button' tag instead of a self-referencing 'Button'
 };
