@@ -10,4 +10,22 @@
 input {
     all: unset; /* Resets all inherited and default styles */
     box-sizing: border-box; /* Ensures consistent box-sizing */
+    border: solid 1px;
+    border-color: #232323;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 12px;
+    forced-color-adjust: #D3FFCA;
   }
+
+  /* For most modern browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
