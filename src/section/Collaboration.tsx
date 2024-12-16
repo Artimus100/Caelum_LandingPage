@@ -22,7 +22,7 @@ export const Collaboration = () => {
                 {
                     collaborationList.map(({name, year}) => (
                         <div key={name} className="flex flex-col items-start justify-center gap-1">
-                            <h4 className="text-sm text-[#D3FFCA]">{year}</h4>
+                            <h4 className="text-sm text-teal-600">{year}</h4>
                             <h3 className="text-4xl font-medium font-['Sofia_Pro'] uppercase text-[#9CB0A9]">{name}</h3>
                         </div>
                     ))
@@ -32,7 +32,7 @@ export const Collaboration = () => {
             {
                     collaborationList.map(({name, year}) => (
                         <div key={name} className="flex flex-col items-end justify-center gap-1">
-                            <h4 className="text-sm text-[#D3FFCA]">{year}</h4>
+                            <h4 className="text-sm text-teal-600">{year}</h4>
                             <h3 className="text-4xl font-medium font-['Sofia_Pro'] uppercase text-[#9CB0A9] ">{name}</h3>
                         </div>
                     ))

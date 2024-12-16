@@ -7,3 +7,7 @@
     background-color: #141414;
 }
 }
+input {
+    all: unset; /* Resets all inherited and default styles */
+    box-sizing: border-box; /* Ensures consistent box-sizing */
+  }

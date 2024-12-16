@@ -39,7 +39,7 @@ export const Headers = () => {
         <img src={Logo.src} alt="Logo" />
       </div>
       <div
-        className="flex w-1/2 flex-row justify-between items-center rounded-[16px] px-4 py-3 outline outline-1 outline-[#07B782]"
+        className="flex w-1/2 flex-row justify-between items-center rounded-[16px] px-4 py-3 outline outline-1 outline-teal-600"
         style={{
           background: 'linear-gradient(180deg, rgba(0, 203, 169, 0.12) 0%, rgba(0, 203, 169, 0.01) 210.19%)',
           boxShadow:
