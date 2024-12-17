@@ -34,7 +34,7 @@ export const Testimonials = () => {
         companyImage : Profile_1.src,
         personImage : Profile_2.src
     },]
-    return <div className="m-12 mt-48">
+    return <section id='Testimonials' className="m-12 mt-48">
         <div >
             <h1 className="text-7xl font-['Anton_SC'] text-[#9CB0A9]  uppercase">Testimonials</h1>
         </div>
@@ -53,5 +53,5 @@ export const Testimonials = () => {
         ))}
         </motion.div>
         </div>
-    </div>
+    </section>
 }

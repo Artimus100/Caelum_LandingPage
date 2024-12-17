@@ -4,7 +4,7 @@ import Feature_3 from '../Assets/Feature3.png'
 
 export const Feature = () => {
 
-    return <div className="mt-[360px] mb-[240px] px-12">
+    return <section id='Feature' className="mt-[360px] mb-[240px] px-12">
         <div>
             <h1 className="text-7xl font-['Anton_SC'] text-[#9CB0A9]  uppercase">Feature</h1>
         </div>
@@ -48,5 +48,5 @@ export const Feature = () => {
             </div>
 
         </div>
-    </div>
+    </section>
 }

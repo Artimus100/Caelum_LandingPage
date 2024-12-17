@@ -2,7 +2,7 @@ import Vission_1 from '../Assets/VissionCard1.png'
 import Vission_2 from '../Assets/VissionCard2.png'
 
 export const Vission = () => {
-    return <div className='my-72 pl-6 mx-12  relative '>
+    return <section id='Vission' className='my-72 pl-6 mx-12  relative '>
         <h1 className="text-7xl font-['Anton_SC'] tracking-wider text-[#CDCDCD] uppercase">
         To drive a
         <div className='size-60 top-0 left-[360px]  absolute'>
@@ -16,5 +16,5 @@ export const Vission = () => {
         </div>
         <span className=''>future through transparent accessible</span>
         <span className='text-teal-600 ml-5'>blockchain</span> innovations</h1>
-    </div>
+    </section>
 }

@@ -4,11 +4,24 @@ import { Button } from '../components/Button';
 
 export const Headers = () => {
   const navItems = [
-    { name: 'Home' },
-    { name: 'Services' },
-    { name: 'Work' },
-    { name: 'Team' },
-    { name: 'Contact' },
+    {
+        name: 'Home',
+        id : '#Hero'
+     },
+    {
+        name: 'Progress',
+        id : '#Progress'
+     },
+    {
+        name: 'Testimonial',
+        id : '#Testimonial' },
+    {
+        name: 'About Us',
+        id : '#AboutUs'
+     },
+    {
+        name: 'Contact',
+        id : '#ContactUs' },
   ];
 
   const [isActive, setIsActive] = useState('');
@@ -28,7 +41,7 @@ export const Headers = () => {
   }, []);
 
   return (
-    <header
+    <nav
       className={`flex w-full justify-between items-center px-8 py-4 fixed transition-all duration-300 z-40 ${
         isScrolled
           ? 'backdrop-blur-sm bg-emerald-950/5 shadow-md shadow-black/5'
@@ -47,8 +60,9 @@ export const Headers = () => {
           backdropFilter: 'blur(10.5px)',
         }}
       >
-        {navItems.map(({ name }) => (
-          <div
+        {navItems.map(({ name, id }) => (
+          <a
+            href={id}
             onClick={() => setIsActive(name)}
             key={name}
             className={`cursor-pointer font-['Sofia_Pro'] text-xl font-md rounded-lg px-4 py-1 ${
@@ -56,7 +70,7 @@ export const Headers = () => {
             }`}
           >
             {name}
-          </div>
+          </a>
         ))}
       </div>
       <div className="flex">
@@ -64,6 +78,6 @@ export const Headers = () => {
           <Button label="Connet Wallet" />
         </div>
       </div>
-    </header>
+    </nav>
   );
 };

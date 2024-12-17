@@ -12,7 +12,7 @@ export const GetInTouch = () => {
         lable: 'Phone',
         value: '+91 2891839278'
     }]
-    return <div className="m-12 mt-48">
+    return <section id='ContactUs' className="m-12 mt-48">
         <div className=''>
             <h1 className="text-7xl font-['Anton_SC'] text-[#9CB0A9]  uppercase">Get In Touch</h1>
         </div>
@@ -66,5 +66,5 @@ export const GetInTouch = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 }

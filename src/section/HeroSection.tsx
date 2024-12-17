@@ -76,7 +76,7 @@ export const HeroSection = () => {
       };
 
 
-    return <div className=''>
+    return <section id='Hero' className=''>
 
         <div className="z-0 overflow-hidden inline-flex items-center justify-center mt-28">
            <div className='w-full flex items-center justify-center'>
@@ -137,5 +137,5 @@ export const HeroSection = () => {
                         <img src={Card_3.src} alt="" />
                     </div>
 
-    </div>
+    </section>
 }
