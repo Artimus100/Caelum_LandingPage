@@ -12,7 +12,7 @@ export const Collaboration = () => {
         year:2023
     },
 ]
-    return <div className="flex flex-col gap-16 px-12 ">
+    return <section className="flex flex-col gap-16 px-12 ">
         <div className="mb-12">
             <h1 className="text-7xl font-['Anton_SC'] text-[#9CB0A9]  uppercase">Collaboration</h1>
         </div>
@@ -43,5 +43,5 @@ export const Collaboration = () => {
             <img src={Globe.src} alt="3D globe" />
         </div>
         </div>
-    </div>
+    </section>
 }

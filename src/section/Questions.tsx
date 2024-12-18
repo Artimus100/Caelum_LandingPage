@@ -18,7 +18,7 @@ export const Questions = () => {
         question : 'How does decentralized governance work ?',
         answer : 'Our platform empowers users through DAO-based governance, enabling them to participate in decision-making processes and influence the platform s growth and direction.'
     },]
-    return <div className="m-12 mt-48">
+    return <section id='Question' className="m-12 mt-48">
                     <div >
             <h1 className="text-7xl font-['Anton_SC'] text-[#9CB0A9]  uppercase">Questions</h1>
         </div>
@@ -29,5 +29,5 @@ export const Questions = () => {
                 ))}
             </div>
         </div>
-    </div>
+    </section>
 }

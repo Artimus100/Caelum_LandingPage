@@ -17,7 +17,7 @@ export const Progress = () => {
         desc: 'We built an advanced customer support chatbot for Doodle. Our chatbot now handles 87% of Doodle s customer support inquiries, freeing up their team to focus on more complex issues.'
     },
     ]
-    return <div className="px-12">
+    return <section id='Progress' className="px-12">
         <div>
             <h1 className="text-7xl font-['Anton_SC'] text-[#9CB0A9]  uppercase">Progress</h1>
         </div>
@@ -45,5 +45,5 @@ export const Progress = () => {
                 <img src={ProgressCard.src} alt="Progress Forest" />
             </div>
         </div>
-    </div>
+    </section>
 }
