@@ -4,6 +4,7 @@ import Card_1 from '../Assets/Card1.png'
 import Card_2 from '../Assets/Card2.png'
 import Card_3 from '../Assets/Card3.png'
 import { Card } from '../components/Card'
+import { motion } from 'framer-motion'
 
 export const HeroSection = () => {
     const cardDetails = [{
@@ -64,16 +65,22 @@ export const HeroSection = () => {
         Price : 220
     }]
 
-    const floatAnimation = {
-        animate: {
-          y: [0, -10, 0], // Keyframes for up and down movement
-        },
-        transition: {
-          duration: 3, // Animation duration
-          repeat: Infinity, // Repeat infinitely
-          ease: "easeInOut", // Easing function
-        },
-      };
+        // Define the animation variants
+        const floatAnimation = (delay = 0) => ({
+          animate: {
+            y: [-8, 8],
+            rotate: 0  ,
+            transition: {
+              delay,
+              duration: 3,
+              repeat: Infinity,
+              repeatType: "reverse",
+            },
+          },
+          whileHover: {
+            scale: 1.2,
+          },
+        });
 
 
     return <section id='Hero' className=''>
@@ -122,20 +129,20 @@ export const HeroSection = () => {
     </div>
 
                     {/* <Card cardDetails={cardDetails[0]} /> */}
-                    <div className=' absolute bottom-20 left-1/3 size-60'>
+                    <motion.div {...floatAnimation(0)} className=' absolute bottom-20 left-1/3 size-60 shadow-lg'>
                         <img src={Card_1.src} alt="" />
-                    </div>
+                    </motion.div >
 
 
                     {/* <Card cardDetails={cardDetails[1]} /> */}
-                    <div className='bg-none absolute -bottom-20 right-10 size-60'>
+                    <motion.div {...floatAnimation(0.4)} className='bg-none absolute -bottom-20 right-10 size-60 shadow-lg'>
                         <img src={Card_2.src} alt="" />
-                    </div>
+                    </motion.div >
 
                     {/* <Card cardDetails={cardDetails[2]} /> */}
-                    <div className='bg-none absolute -bottom-60 left-10 size-60'>
+                    <motion.div {...floatAnimation()} className='bg-none absolute -bottom-60 left-10 size-60 shadow-lg'>
                         <img src={Card_3.src} alt="" />
-                    </div>
+                    </motion.div >
 
     </section>
 }

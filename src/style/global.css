@@ -15,7 +15,13 @@ input {
     border-radius: 6px;
     padding: 8px 12px;
     margin-top: 12px;
-    forced-color-adjust: #D3FFCA;
+    color: #CDCDCD;
+  }
+  input:focus {
+    border: 1px solid #38b2ac;
+    outline: none;
+    color: #CDCDCD;
+    opacity: 80;
   }
 
   /* For most modern browsers */

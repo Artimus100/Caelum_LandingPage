@@ -7,10 +7,11 @@ export const TestimonialCard = (props: ComponentPropsWithoutRef<'div'> &{
     position?: string;
     companyImage?: string;
     personImage?: string;
+    hover ?: boolean;
 }) => {
 
-    const { keyPhrase, testimonial, name, position, companyImage, personImage } = props;
-    return <div className='text-zinc-300 w-[400px] p-2 outline outline-1 flex-shrink-0 rounded-lg outline-zinc-500/40  my-12 '>
+    const { keyPhrase, testimonial, name, position, companyImage, personImage, hover } = props;
+    return <div  className={`text-zinc-300 w-[400px] p-2 outline outline-1 bg-[#141414] flex-shrink-0 rounded-lg   my-12 ${hover ? 'outline-teal-500 shadow-lg shadow-teal-500' : 'outline-zinc-500/40' } `}>
             <div className='inline-flex flex-col items-start gap-4 mx-6 my-5 '>
                 <h3 className='text-[28px] tracking-wide'>
                 <span className='text-teal-100'>"</span>{keyPhrase}<span className='text-teal-300'>"</span>

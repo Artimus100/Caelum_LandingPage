@@ -7,7 +7,7 @@ import Gmail from '../Assets/Gmail.svg'
 export const Footer = () => {
     return <section id='Footer' className="bg-black mt-48 pt-12 ">
         <div className='pb-6 border-b-[1px] border-b-zinc-600/60 mx-12 '>
-            <h1 className="text-7xl  font-['Inter'] text-[#9CB0A9]">calium<span className='text-teal-500/60'>@gmail</span>.com</h1>
+            <h1 className="text-7xl  font-['Inter'] text-[#9CB0A9]">calium<span className='text-teal-500/80'>@gmail</span>.com</h1>
         </div>
         <div className='flex flex-row justify-between items-start p-12 '>
             <div className='inline-fle flex-col '>

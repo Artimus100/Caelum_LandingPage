@@ -24,7 +24,7 @@ export const QnA = (props: PropsWithoutRef<'div'> & { question?: string; answer?
 
       {/* Smooth text reveal */}
       <div
-        className={`overflow-hidden transition-all duration-400 ease-in-out ${
+        className={`overflow-hidden transition-all duration-500 ease-in-out ${
           open ? 'max-h-[200px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >

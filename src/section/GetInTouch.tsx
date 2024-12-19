@@ -1,5 +1,8 @@
+import { useRef, useState } from 'react'
 import Arrow from '../Assets/Arrow.svg'
 import { Button } from '../components/Button'
+import { motion, useInView } from 'framer-motion'
+
 export const GetInTouch = () => {
     const contactDetails = [{
         lable: 'Tweeter',
@@ -12,9 +15,22 @@ export const GetInTouch = () => {
         lable: 'Phone',
         value: '+91 2891839278'
     }]
-    return <section id='ContactUs' className="m-12 mt-48">
-        <div className=''>
-            <h1 className="text-7xl font-['Anton_SC'] text-[#9CB0A9]  uppercase">Get In Touch</h1>
+    const sectionRef = useRef(null)
+    const isInView = useInView(sectionRef, {once:true, margin:'-40px'})
+
+    const [hover, setHover] = useState(-1);
+    return <section ref={sectionRef} id='ContactUs' className="m-12 mt-48">
+        <div className='relative'>
+            <motion.h1
+            initial={{ width: '0%' }}
+            animate={isInView ? { width: '100%' } : { width: '0%' }}
+            transition={{
+                ease: 'easeOut',
+                duration: 4,
+
+            }}
+     className="absolute overflow-hidden text-nowrap top-0 text-7xl font-['Anton_SC'] text-teal-500  uppercase">Get In Touch</motion.h1>
+            <h1 className="text-7xl   font-['Anton_SC'] text-[#9CB0A9]  uppercase">Get In Touch</h1>
         </div>
         <div className='mt-12 flex w-full justify-between items-start'>
             <div className='inline-flex w-1/3   '>
@@ -22,12 +38,42 @@ export const GetInTouch = () => {
                     {
                         contactDetails.map(({ lable, value }, index) => (
 
-                            <div key={index} className='border-b-[1px] pb-3 border-b-zinc-600/30 inline-flex  flex-col  justify-between '>
+                            <div
+                            onMouseEnter={() => setHover(index)}
+                            onMouseLeave={() => setHover(-1)}
+                            key={index}
+                            className=' border-b-[1px] pb-3 relative border-b-zinc-600/30 inline-flex  flex-col  justify-between'
+                            >
+                                <motion.div
+                                    initial={{width:'0%'}}
+                                    animate={{width : hover === index ? '100%' : '0%'}}
+                                    transition={{
+                                        ease: 'linear',
+                                        duration: 0.4,
+                                    }}
+                                className='inset-0 absolute border-b-[1px] pb-3 border-b-teal-500'></motion.div>
                                 <h5 className='text-zinc-500'>{lable}</h5>
                                 <div className='inline-flex flex-row gap-4 items-center justify-start'>
+                                    <div className='inline-flex relative'>
+                                    <motion.h2
+                                    initial={{width:'0%'}}
+                                    animate={{width : hover === index ? '100%' : '0%'}}
+                                    transition={{
+                                        ease: 'linear',
+                                        duration: 0.4,
+                                    }}
+                                    className='absolute text-nowrap left-0 overflow-clip text-3xl text-teal-500'>{value}</motion.h2>
                                     <h2 className='text-3xl text-zinc-200'>{value}</h2>
+                                    </div>
                                     <div className='inline-flex items-center justify-center'>
-                                        <img src={Arrow.src} className=' rotate-[135deg] size-12' alt="Arrow Icon" />
+                                        <motion.img
+                                        initial={{rotate:'135deg'}}
+                                        animate={{rotate : hover === index ? '180deg' : '135deg'}}
+                                        transition={{
+                                            ease: 'linear',
+                                            duration: 0.4,
+                                        }}
+                                        src={Arrow.src} className={` size-12 `} alt="Arrow Icon" />
                                     </div>
                                 </div>
                             </div>
