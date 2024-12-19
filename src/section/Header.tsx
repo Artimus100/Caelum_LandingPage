@@ -54,10 +54,10 @@ export const Headers = () => {
       <div
         className="flex w-1/2 flex-row justify-between items-center rounded-[16px] px-4 py-3 outline outline-1 outline-teal-600"
         style={{
-          background: 'linear-gradient(180deg, rgba(0, 203, 169, 0.12) 0%, rgba(0, 203, 169, 0.01) 210.19%)',
-          boxShadow:
-            '0px -10px 10px 0px rgba(0, 203, 169, 0.08) inset, 0px 1px 4px 0px rgba(255, 255, 255, 0.05) inset, 0px 2px 6px 0px rgba(255, 255, 255, 0.02) inset, 5px 6px 23px 0px rgba(0, 203, 169, 0.12) inset',
-          backdropFilter: 'blur(10.5px)',
+            background: 'linear-gradient(180deg, rgba(0, 203, 169, 0.12) 0%, rgba(0, 203, 169, 0.01) 210.19%)',
+            boxShadow:
+                '0px -10px 10px 0px rgba(0, 203, 169, 0.08) inset, 0px 1px 4px 0px rgba(255, 255, 255, 0.05) inset, 0px 2px 6px 0px rgba(255, 255, 255, 0.02) inset, 5px 6px 23px 0px rgba(0, 203, 169, 0.12) inset',
+            backdropFilter: 'blur(10.5px)',
         }}
       >
         {navItems.map(({ name, id }) => (

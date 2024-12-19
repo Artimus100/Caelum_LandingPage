@@ -1,5 +1,6 @@
+import { useRef } from "react"
 import { QnA } from "../components/QnA"
-
+import { motion, useInView } from "framer-motion"
 export const Questions = () => {
     const questionAnswer = [{
         question : 'What is the purpose of this platform?',
@@ -18,8 +19,19 @@ export const Questions = () => {
         question : 'How does decentralized governance work ?',
         answer : 'Our platform empowers users through DAO-based governance, enabling them to participate in decision-making processes and influence the platform s growth and direction.'
     },]
-    return <section id='Question' className="m-12 mt-48">
-                    <div >
+    const questionRef = useRef(null)
+    const isInView = useInView(questionRef, {once:true, margin:'-40px'})
+    return <section ref={questionRef} id='Question' className="m-12 mt-48">
+                    <div className="relative">
+            <motion.h1
+                    initial={{ width: '0%' }}
+                    animate={isInView ? { width: '100%' } : { width: '0%' }}
+                    transition={{
+                        ease: 'easeOut',
+                        duration: 4,
+
+                    }}
+             className="absolute overflow-hidden top-0 text-7xl font-['Anton_SC'] text-teal-500  uppercase">Questions</motion.h1>
             <h1 className="text-7xl font-['Anton_SC'] text-[#9CB0A9]  uppercase">Questions</h1>
         </div>
         <div>
