@@ -1,4 +1,4 @@
-import Globe from '../Assets/Globe.png';
+import Globe from '../assets/Globe.png';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { HoverableText } from '../components/HoverText';

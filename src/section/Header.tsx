@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Logo from '../Assets/Logo.png';
+import Logo from '../assets/Logo.png';
 import { Button } from '../components/Button';
 
 export const Headers = () => {

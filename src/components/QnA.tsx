@@ -1,5 +1,5 @@
 import { useState, type PropsWithoutRef } from 'react';
-import Add from '../Assets/Add.svg';
+import Add from '../assets/Add.svg';
 
 export const QnA = (props: PropsWithoutRef<'div'> & { question?: string; answer?: string }) => {
   const { question, answer } = props;

@@ -1,5 +1,5 @@
-import ProgressCard from '../Assets/Container.png'
-import Arrow from '../Assets/Arrow.svg'
+import ProgressCard from '../assets/Container.png'
+import Arrow from '../assets/Arrow.svg'
 import { useRef, useState } from 'react'
 import { animate, motion, useInView } from 'framer-motion'
 

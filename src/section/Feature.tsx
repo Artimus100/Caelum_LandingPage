@@ -1,7 +1,7 @@
 import { useRef } from 'react'
-import Feature_1 from '../Assets/Feature1.png'
-import Feature_2 from '../Assets/Feature2.png'
-import Feature_3 from '../Assets/Feature3.png'
+import Feature_1 from '../assets/Feature1.png'
+import Feature_2 from '../assets/Feature2.png'
+import Feature_3 from '../assets/Feature3.png'
 import { motion, useInView } from 'framer-motion'
 
 export const Feature = () => {

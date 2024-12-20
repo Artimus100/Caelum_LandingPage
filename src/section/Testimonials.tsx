@@ -1,6 +1,6 @@
 import { TestimonialCard } from "../components/TestimonialCard";
-import Profile_1 from '../Assets/Profile.png';
-import Profile_2 from '../Assets/Profile2.png';
+import Profile_1 from '../assets/Profile.png';
+import Profile_2 from '../assets/Profile2.png';
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import Index from "../pages/index.astro";
