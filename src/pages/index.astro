@@ -1,19 +1,31 @@
 ---
+
 import {HeroSection} from '../section/HeroSection'
+import { NavBar } from '../section/NavBar'
 import { Headers } from '../section/Header';
 import Layout from '../layouts/Layout.astro';
 import { Vission } from '../section/Vission';
 import { Collaboration } from '../section/Collaboration'
 import { Feature } from '../section/Feature'
+import { Progress } from '../section/Progress'
+import { Testimonials } from '../section/Testimonials'
+import { Questions } from '../section/Questions'
+import { GetInTouch } from '../section/GetInTouch'
+import { Footer } from '../section/Footer';
 
-
-// main page to render the component and sections
 ---
 
-<Layout>
+
+<Layout >
+    <NavBar  client:load/>
     <Headers client:load/>
-	<HeroSection />
-    <Vission />
-    <Collaboration />
-    <Feature />
+	<HeroSection client:load/>
+    <Vission client:load />
+    <Collaboration client:load/>
+    <Feature client:load/>
+    <Progress client:load/>
+    <Testimonials client:load/>
+    <Questions client:load/>
+    <GetInTouch client:load/>
+    <Footer />
 </Layout>

@@ -6,4 +6,36 @@
   body {
     background-color: #141414;
 }
+
+}
+input {
+    all: unset; /* Resets all inherited and default styles */
+    box-sizing: border-box; /* Ensures consistent box-sizing */
+    border: solid 1px;
+    border-color: #232323;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 12px;
+    color: #CDCDCD;
+  }
+  input:focus {
+    border: 1px solid #38b2ac;
+    outline: none;
+    color: #CDCDCD;
+    opacity: 80;
+  }
+
+  /* For most modern browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+html {
+    scroll-behavior: smooth;
 }
