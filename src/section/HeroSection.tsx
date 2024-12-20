@@ -1,10 +1,10 @@
-import CardImage from '../Assets/Card.jpeg'
-import Noice from '../Assets/Background.svg'
-import Card_1 from '../Assets/Card1.png'
-import Card_2 from '../Assets/Card2.png'
-import Card_3 from '../Assets/Card3.png'
-import { Card } from '../components/Card'
+import CardImage from '../assets/Card.jpeg'
+import Noice from '../assets/Background.svg'
+import Card_1 from '../assets/Card1.png'
+import Card_2 from '../assets/Card2.png'
+import Card_3 from '../assets/Card3.png'
 import { motion } from 'framer-motion'
+import { Button } from '../components/Button'
 
 export const HeroSection = () => {
     const cardDetails = [{
@@ -85,12 +85,28 @@ export const HeroSection = () => {
 
     return <section id='Hero' className=''>
 
-        <div className="z-0 overflow-hidden inline-flex items-center justify-center mt-28">
+        <div className="z-0 overflow-hidden inline-flex items-center justify-center mt-20">
            <div className='w-full flex items-center justify-center'>
            <h1
-                className="pl-4 text-[116px]  tracking-tight leading-tight  uppercase font-extrabold font-['Anton_SC'] text-[#CDCDCD]"
+                className="pl-4 text-[116px]  tracking-tight leading-[120px]  uppercase font-extrabold font-['Anton_SC'] text-[#CDCDCD]"
             >Building a <span className="text-[#39B79F]">Carbon-Neutral</span> World with Blockchain </h1>
            </div>
+        </div>
+        <div className='flex-row flex justify-between  items-end p-5'>
+            <div className='inline-flex w-2/3 items-center '>
+                <h3 className='text-zinc-400 text-sm leading-[24px]'>Unlock the power of fractional ownership and make carbon offsetting accessible to everyone. Our platform allows individuals and businesses to buy and trade tokenized carbon credits, ensuring transparency at every step with blockchain technology. With real-time tracking and a decentralized system, you can confidently participate in the carbon market, knowing that every transaction is secure, verifiable, and impactful. Join the waitlist to be part of the future or track your progress with transparency on X.</h3>
+            </div>
+            <div className='inline-flex gap-3 mr-2  flex-col justify-end items-end'>
+                <Button label='Join Waitlist'/>
+<motion.button
+    whileTap={{scale:0.95}}
+     className="relative inline-block text-sm group  -mb-10">
+    <span className="relative z-10 block px-5  bg-black/5   py-2.5 overflow-hidden font-semibold leading-tight text-zinc-200 shadow-md shadow-teal-200/5 transition-colors duration-300 ease-out outline outline-1 outline-teal-100/20 backdrop-blur-lg rounded-lg group-hover:text-zinc-800">
+        <span className="absolute left-0 w-40 h-40  transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-[#ccc] group-hover:-rotate-180 ease"></span>
+        <span className="relative px-[2px]">Join Journy</span>
+    </span>
+    </motion.button>;
+            </div>
         </div>
             <div className="inset-0 absolute -z-20 "  >
                 <img src={Noice.src} className='w-full opacity-10' alt="" />
@@ -129,18 +145,18 @@ export const HeroSection = () => {
     </div>
 
                     {/* <Card cardDetails={cardDetails[0]} /> */}
-                    <motion.div {...floatAnimation(0)} className=' absolute bottom-20 left-1/3 size-60 shadow-lg'>
+                    <motion.div {...floatAnimation(0)} className=' absolute -bottom-20 left-1/3 size-60 shadow-lg'>
                         <img src={Card_1.src} alt="" />
                     </motion.div >
 
 
                     {/* <Card cardDetails={cardDetails[1]} /> */}
-                    <motion.div {...floatAnimation(0.4)} className='bg-none absolute -bottom-20 right-10 size-60 shadow-lg'>
+                    <motion.div {...floatAnimation(0.4)} className='bg-none absolute -bottom-40 right-10 size-60 shadow-lg'>
                         <img src={Card_2.src} alt="" />
                     </motion.div >
 
                     {/* <Card cardDetails={cardDetails[2]} /> */}
-                    <motion.div {...floatAnimation()} className='bg-none absolute -bottom-60 left-10 size-60 shadow-lg'>
+                    <motion.div {...floatAnimation()} className='bg-none absolute -bottom-96 left-10 size-60 shadow-lg'>
                         <img src={Card_3.src} alt="" />
                     </motion.div >
 

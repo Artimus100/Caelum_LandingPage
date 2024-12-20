@@ -1,5 +1,5 @@
-import Vission_1 from '../Assets/VissionCard1.png';
-import Vission_2 from '../Assets/VissionCard2.png';
+import Vission_1 from '../assets/VissionCard1.png';
+import Vission_2 from '../assets/VissionCard2.png';
 import { motion } from 'framer-motion';
 
 export const Vission = () => {

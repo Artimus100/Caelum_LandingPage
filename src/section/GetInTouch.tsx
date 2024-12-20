@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import Arrow from '../Assets/Arrow.svg'
+import Arrow from '../assets/Arrow.svg'
 import { Button } from '../components/Button'
 import { motion, useInView } from 'framer-motion'
 

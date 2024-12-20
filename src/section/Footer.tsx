@@ -1,8 +1,8 @@
-import Logo from '../Assets/Logo.svg'
-import X from '../Assets/X.svg'
-import Whatsapp from '../Assets/Whatsapp.svg'
-import Instagram from '../Assets/Instagram.svg'
-import Gmail from '../Assets/Gmail.svg'
+import Logo from '../assets/Logo.svg'
+import X from '../assets/X.svg'
+import Whatsapp from '../assets/Whatsapp.svg'
+import Instagram from '../assets/Instagram.svg'
+import Gmail from '../assets/Gmail.svg'
 
 export const Footer = () => {
     return <section id='Footer' className="bg-black mt-48 pt-12 ">
